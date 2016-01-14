@@ -1,0 +1,9 @@
+---
+applications:
+- name: timezone
+  memory: 1G
+  instances: 1
+  host: timezone
+  path: target/timezone-0.0.1-SNAPSHOT.jar
+  env:
+    JAVA_OPTS: -Duser.timezone='Asia/Hong_Kong'
